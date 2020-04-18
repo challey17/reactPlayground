@@ -1,30 +1,29 @@
 import React from "react";
-import Tabs from "./state/Tabs";
+import Accordian from "./state-drills/Accordian";
 
-// array of objects each with a name and content
-const tabsProp = [
+const sections = [
   {
-    name: "First tab",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem quos consectetur expedita consequatur. Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque.",
+    title: "Section 1",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
-    name: "Second tab",
+    title: "Section 2",
     content:
-      "Laboriosam exercitationem quos consectetur expedita consequatur. Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Cupiditate tenetur aliquam necessitatibus id distinctio quas nihil ipsam nisi modi!",
   },
   {
-    name: "Third tab",
+    title: "Section 3",
     content:
-      "Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem quos consectetur expedita consequatur.",
+      "Animi amet cumque sint cupiditate officia ab voluptatibus libero optio et?",
   },
 ];
+// e.g. <Accordion sections={sections} />
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <Tabs tabs={tabsProp} />
+        <Accordian sections={sections} />
       </div>
     );
   }
