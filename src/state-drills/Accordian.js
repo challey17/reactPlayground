@@ -6,10 +6,12 @@ export default class Accordion extends Component {
     sections: [],
   };
 
+  //sets initial state to null, i.e. nothing selected
   state = {
     activeSectionIndex: null,
   };
 
+  // setState will update the state to the current index from the array
   handleSetActiveSecion = (sectionIndex) => {
     this.setState({ activeSectionIndex: sectionIndex });
   };
